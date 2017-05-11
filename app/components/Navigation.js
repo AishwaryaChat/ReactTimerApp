@@ -9,8 +9,8 @@ export default class Nav extends React.Component {
           <div className="nav-wrapper">
             <ul id="nav-mobile" className="left hide-on-med-and-down">
               <li className='brand-logo center'>React Timer App</li>
-              <li><IndexLink to='/' activeClassName='active'>Timer</IndexLink></li>
-              <li><Link to='/' activeClassName='active'>Count Down</Link></li>
+              <li><IndexLink to='/' activeClassName='active-link'>Timer</IndexLink></li>
+              <li><Link to='/Countdown' activeClassName='active-link'>Count Down</Link></li>
             </ul>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>Created By</li>

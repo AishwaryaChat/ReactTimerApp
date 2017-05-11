@@ -24,6 +24,8 @@ module.exports = {
     alias: {
       Main: path.resolve('app/components/Main.js'),
       Navigation: path.resolve('app/components/Navigation.js'),
+      Timer: path.resolve('app/components/Timer.js'),
+      Countdown: path.resolve('app/components/Countdown.js'),
       applicationStyles: path.resolve('app/styles/app.scss')
     },
     extensions: ['*', '.js', '.jsx'] // list of file extensions that we want to process
