@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  entry: ['./app/app.jsx'],        // entry point for rendering
+  entry: ['./app/app.js'],        // entry point for rendering
   externals: {
     jquery: 'jQuery'
   },
@@ -22,8 +22,8 @@ module.exports = {
     // speifies the absolute path of each file in the project, which will help in not specifying the path again
     // and agin when requiring the particular file
     alias: {
-      Main: path.resolve('app/components/Main.jsx'),
-      Nav: path.resolve('app/components/Nav.jsx'),
+      Main: path.resolve('app/components/Main.js'),
+      Navigation: path.resolve('app/components/Navigation.js'),
       applicationStyles: path.resolve('app/styles/app.scss')
     },
     extensions: ['*', '.js', '.jsx'] // list of file extensions that we want to process
@@ -36,7 +36,7 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-0']
         },
-        test: /\.jsx?$/, // regular expression to run this loader only on .jsx files.
+        test: /\.js?$/, // regular expression to run this loader only on .jsx files.
         exclude: /(node_modules|bower_components)/ // folders which we do not want to parse
       },
       { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' }
